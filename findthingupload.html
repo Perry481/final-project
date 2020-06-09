@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>find things</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>I'm finding things.</h1> 
+        <div>Please type down your personal information and describe your lost stuff.</div><br>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="first name"><br><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="last name"><br><br>
+            <label for="Phoneno">Phone number:</label><br>
+            <input type="text" id="fname" name="Phoneno" value="09xxxxxxxx"><br><br>
+            <label for="description">Please discribe your lost stuff:</label><br>
+            <textarea cols="50" rows="5">
+                Describe your stuff.
+            </textarea>
+        </form> 
+        
+        <form action="upload.php" method="post" enctype="multipart/form-data"><br>
+  Please upload image if available:<br>
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+        
+     
+    </body>
+</html>
